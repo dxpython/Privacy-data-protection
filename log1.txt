@@ -1,0 +1,71 @@
+root@autodl-container-7e3347a2c9-94153605:~/autodl-tmp/HE# python federated_learning.py 
+torch.Size([32, 3, 224, 224]) torch.Size([32])
+当前设备: cuda
+
+开始联邦学习，总共 3 轮训练...
+
+联邦学习轮次:   0%|                                                                                                                                          | 0/3 [00:00<?, ?round/s]
+------------------- 第 1 轮 -------------------
+[Client 0] 正在更新本地模型...
+                                                                                                                                                                                     [Client 0] 本地训练完成，平均损失: 0.2279                                                                                                                                              
+WARNING: The input does not fit in a single ciphertext, and some operations will be disabled.
+The following operations are disabled in this setup: matmul, matmul_plain, enc_matmul_plain, conv2d_im2col.
+If you need to use those operations, try increasing the poly_modulus parameter, to fit your input.
+[Client 1] 正在更新本地模型...
+                                                                                                                                                                                     [Client 1] 本地训练完成，平均损失: 0.2292                                                                                                                                              
+WARNING: The input does not fit in a single ciphertext, and some operations will be disabled.
+The following operations are disabled in this setup: matmul, matmul_plain, enc_matmul_plain, conv2d_im2col.
+If you need to use those operations, try increasing the poly_modulus parameter, to fit your input.
+[Client 2] 正在更新本地模型...
+                                                                                                                                                                                     [Client 2] 本地训练完成，平均损失: 0.2221                                                                                                                                              
+WARNING: The input does not fit in a single ciphertext, and some operations will be disabled.
+The following operations are disabled in this setup: matmul, matmul_plain, enc_matmul_plain, conv2d_im2col.
+If you need to use those operations, try increasing the poly_modulus parameter, to fit your input.
+[Server] 正在聚合客户端更新...
+[Server] 全局模型参数已更新。
+轮次 1 完成，耗时 189.94 秒。
+
+联邦学习轮次:  33%|███████████████████████████████████████████                                                                                      | 1/3 [03:09<06:19, 189.94s/round]
+------------------- 第 2 轮 -------------------
+[Client 0] 正在更新本地模型...
+                                                                                                                                                                                     [Client 0] 本地训练完成，平均损失: 0.2269                                                                                                                                              
+WARNING: The input does not fit in a single ciphertext, and some operations will be disabled.
+The following operations are disabled in this setup: matmul, matmul_plain, enc_matmul_plain, conv2d_im2col.
+If you need to use those operations, try increasing the poly_modulus parameter, to fit your input.
+[Client 1] 正在更新本地模型...
+                                                                                                                                                                                     [Client 1] 本地训练完成，平均损失: 0.2286                                                                                                                                              
+WARNING: The input does not fit in a single ciphertext, and some operations will be disabled.
+The following operations are disabled in this setup: matmul, matmul_plain, enc_matmul_plain, conv2d_im2col.
+If you need to use those operations, try increasing the poly_modulus parameter, to fit your input.
+[Client 2] 正在更新本地模型...
+                                                                                                                                                                                     [Client 2] 本地训练完成，平均损失: 0.2216                                                                                                                                              
+WARNING: The input does not fit in a single ciphertext, and some operations will be disabled.
+The following operations are disabled in this setup: matmul, matmul_plain, enc_matmul_plain, conv2d_im2col.
+If you need to use those operations, try increasing the poly_modulus parameter, to fit your input.
+[Server] 正在聚合客户端更新...
+[Server] 全局模型参数已更新。
+轮次 2 完成，耗时 191.16 秒。
+
+联邦学习轮次:  67%|██████████████████████████████████████████████████████████████████████████████████████                                           | 2/3 [06:21<03:10, 190.66s/round]
+------------------- 第 3 轮 -------------------
+[Client 0] 正在更新本地模型...
+                                                                                                                                                                                     [Client 0] 本地训练完成，平均损失: 0.2277                                                                                                                                              
+WARNING: The input does not fit in a single ciphertext, and some operations will be disabled.
+The following operations are disabled in this setup: matmul, matmul_plain, enc_matmul_plain, conv2d_im2col.
+If you need to use those operations, try increasing the poly_modulus parameter, to fit your input.
+[Client 1] 正在更新本地模型...
+                                                                                                                                                                                     [Client 1] 本地训练完成，平均损失: 0.2296                                                                                                                                              
+WARNING: The input does not fit in a single ciphertext, and some operations will be disabled.
+The following operations are disabled in this setup: matmul, matmul_plain, enc_matmul_plain, conv2d_im2col.
+If you need to use those operations, try increasing the poly_modulus parameter, to fit your input.
+[Client 2] 正在更新本地模型...
+                                                                                                                                                                                     [Client 2] 本地训练完成，平均损失: 0.2220                                                                                                                                              
+WARNING: The input does not fit in a single ciphertext, and some operations will be disabled.
+The following operations are disabled in this setup: matmul, matmul_plain, enc_matmul_plain, conv2d_im2col.
+If you need to use those operations, try increasing the poly_modulus parameter, to fit your input.
+[Server] 正在聚合客户端更新...
+[Server] 全局模型参数已更新。
+轮次 3 完成，耗时 191.39 秒。
+
+联邦学习轮次: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [09:32<00:00, 190.83s/round]
+联邦学习训练全部完成。
