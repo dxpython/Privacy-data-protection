@@ -33,6 +33,12 @@
 
 ## 准备工作
 
+**数据集下载**
+
+通过网盘分享的文件：ISIC 2020 JPG 256x256 RESIZED.zip
+链接: https://pan.baidu.com/s/1M6iOPSqhaNx4AOgE-dZCuQ?pwd=wwtr 提取码: wwtr 
+
+
 **安装依赖**  
 
 - Python >= 3.7  
