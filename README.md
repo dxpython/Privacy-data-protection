@@ -17,7 +17,7 @@
 ```
 
 - **dataloader.py**  
-  包含 `SkinCancerDataset` 类与相关加载逻辑，将皮肤癌数据 CSV（元数据）与实际图像文件对接并输出 `torch.utils.data.Dataset` 或 `DataLoader`。
+  包含 `SkinCancerDataset` 类与相关加载逻辑，将皮肤癌数据 CSV（元数据）与实际图像文件对接并输出 `torch.utils.data.Dataset`。
 - **federated_learning.py**  
   - 项目入口，定义联邦学习主流程。  
   - 初始化全局模型、同态加密上下文、服务器和多个客户端。  
