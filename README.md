@@ -2,7 +2,7 @@
 
 1. **数据加载与预处理** (`dataloader.py`)
 2. **同态加密与分块加密** (`he_encryption.py`)
-3. **深度学习模型（包含创新的图结构与激活函数等）** (`models.py`)
+3. **深度学习模型** (`models.py`)
 4. **联邦学习主流程** (`federated_learning.py`)
 
 ## 项目结构
